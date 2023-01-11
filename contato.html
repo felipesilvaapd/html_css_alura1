@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset-css/reset.css">
+    <link rel="stylesheet" href="global-css/reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Contato - Barbearia Alura</title>
 </head>
@@ -37,27 +37,27 @@
             <label for="mesagem">Mesagem</label>
             <textarea id="mensagem" cols="30" rows="10" class="input-padrao" required></textarea>
 
-            <div>
-                <p>Como prefere nosso contato?</p>
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
                 <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
                 
                 <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
                 
                 <label for="radio-whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
-            </div>
+            </fieldset>
 
-            <div>
-                <p>Qual horário prefere ser atedindo?</p>
+            <fieldset>
+                <legend>Qual horário prefere ser atedindo?</legend>
                 <select>
                     <option>Manhã</option>
                     <option>Tarde</option>
                     <option>Noite</option>
                 </select>
-            </div>
+            </fieldset>
 
             <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email</label>
 
-            <input type="submit" value="Enviar formulário">
+            <input type="submit" value="Enviar formulário" class="enviar">
         </form>
         
     </main>
